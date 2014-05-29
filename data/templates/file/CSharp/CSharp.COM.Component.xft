@@ -79,6 +79,7 @@ namespace ${StandardNamespace}
     ProgId("${StandardNamespace}.${ClassName}"),
     ClassInterface(ClassInterfaceType.AutoDispatch),
     ComSourceInterfaces(typeof(I${ClassName}Events)),
+    ComDefaultInterface(typeof(I${ClassName}Wrapper)),
     ComVisible(true)]
 	public partial class ${ClassName} : Component, I${ClassName}Wrapper
 	{    
