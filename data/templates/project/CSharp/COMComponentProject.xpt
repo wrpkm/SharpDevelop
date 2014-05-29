@@ -84,6 +84,7 @@ namespace ${StandardNamespace}
     ProgId("${StandardNamespace}.COMComponent1"),
     ClassInterface(ClassInterfaceType.AutoDispatch),
     ComSourceInterfaces(typeof(ICOMComponent1Events)),
+    ComDefaultInterface(typeof(ICOMComponent1Wrapper)),
     ComVisible(true)]
 	public partial class COMComponent1 : Component, ICOMComponent1Wrapper
 	{    
